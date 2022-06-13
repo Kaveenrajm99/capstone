@@ -57,6 +57,7 @@ const Products = () => {
                     <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("women's clothing")}>Women's Clothing</button>
                     <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("jewelery")}>Jewellery</button>
                     <button className="btn btn-outline-dark me-2" onClick={() => filterProduct("electronics")}>Electronics</button>
+                    <NavLink to={'/additems'} className="btn btn-outline-dark me-2" >Add Items</NavLink>
                 </div>
                 {filter.map((products) => {
                     return (

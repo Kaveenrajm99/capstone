@@ -30,7 +30,7 @@ const Contact = () => {
         },
         onSubmit: async values => {
             try {
-                await axios.post("http://localhost:3001/contact", values)
+                await axios.post("https://rjcollection.herokuapp.com/contact", values)
 
             } catch (error) {
                 console.log(error);

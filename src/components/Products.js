@@ -14,7 +14,7 @@ const Products = () => {
 
 
             setLoading(true);
-            const response = await fetch('http://localhost:3001/catalog');
+            const response = await fetch('https://rjcollection.herokuapp.com/catalog');
             if (componentMounted) {
                 setData(await response.clone().json());
                 setFilter(await response.json());

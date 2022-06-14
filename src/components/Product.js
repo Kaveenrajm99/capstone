@@ -10,7 +10,7 @@ const Product = () => {
     useEffect(() => {
         const getProduct = async () => {
 
-            const response = await fetch(`https://rjcollection.herokuapp.com/catalog${id}`);
+            const response = await fetch(`https://fakestoreapi.com/products/${id}`);
             setProduct(await response.json());
 
         }
